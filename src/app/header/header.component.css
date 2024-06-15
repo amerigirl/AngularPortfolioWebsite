@@ -1,17 +1,17 @@
-.jumbotron{
-  padding: .3rem 1rem;
-  background-color:lightcyan;
+.jumbotron {
+  padding: 0.3rem 1rem;
+  background-color: lightcyan;
 }
 
-.laptop{
-  height: 250px;
+.laptop {
+  height: 260px;
   border-radius: 50%;
-
+  margin-left: 22%;
 }
 
-.mePic{
-height: 145px;
-width: 150px;
-margin-bottom: 29px;
-margin-left: -15.67%;
+.mePic {
+  height: 125px;
+  width: 130px;
+  margin-bottom: 25px;
+  margin-left: -17.8%;
 }
