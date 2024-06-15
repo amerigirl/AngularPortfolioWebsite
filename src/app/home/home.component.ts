@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor(private titleservice: Title) { //this will set the tab title
+    this.titleservice.setTitle('Be-Asia McKerracher - Home');
+  }
 }
