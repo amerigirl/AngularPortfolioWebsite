@@ -1,9 +1,22 @@
-.myPic{
+.myPic {
   width: 200px;
   height: 200px;
   border-radius: 20%;
+
 }
 
-.row{
+.row {
   padding: 15px;
+}
+
+.title {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.paragraph{
+  padding-top: 15px;
+  text-align: left;
+  text-indent: 25px;
+ margin: 15px 20px 30px;
 }
