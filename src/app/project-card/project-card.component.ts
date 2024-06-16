@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'project-card',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./project-card.component.css']
 })
 export class ProjectCardComponent {
+  @Input() projectName: string = "";
 
 }
