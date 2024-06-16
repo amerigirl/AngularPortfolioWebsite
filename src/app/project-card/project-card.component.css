@@ -3,4 +3,7 @@
  height: 30px;
  width: fit-content;
  font-size: 14px;
+ border-radius: 25px;
+ background-color: blue;
+ color: white;
 }
