@@ -15,8 +15,9 @@
 }
 
 .paragraph{
-  padding-top: 15px;
+  padding-top: 10px;
   text-align: left;
   text-indent: 25px;
  margin: 15px 20px 30px;
+ font-size: large;
 }
