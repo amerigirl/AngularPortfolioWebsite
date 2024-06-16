@@ -1,23 +1,28 @@
 .myPic {
-  width: 200px;
-  height: 200px;
-  border-radius: 20%;
-
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
 }
 
 .row {
   padding: 15px;
 }
 
-.title {
-  padding-top: 20px;
+.title1 {
+  padding-top: 25px;
   padding-bottom: 5px;
 }
 
-.paragraph{
+.paragraph {
   padding-top: 10px;
   text-align: left;
   text-indent: 25px;
- margin: 15px 20px 30px;
- font-size: large;
+  margin: 15px 20px 30px;
+  font-size: large;
+}
+
+.title2 {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 5px;
 }
