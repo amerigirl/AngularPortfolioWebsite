@@ -3,13 +3,13 @@
   style="max-width: 355px; min-width: 355px"
 >
   <div class="card-body">
-    <h5 class="card-title">{{ project.name }}</h5>
-    <p class="card-text">{{ project.summary }}</p>
+    <h5 class="card-title">{{ Project.name }}</h5>
+    <p class="card-text">{{ Project.summary }}</p>
     <button class="btn btn-primary">View More</button>
   </div>
   <div class="div card-footer">
     <div class="d-flex flex-wrap justify-content-center">
-      <div *ngFor="let tag of project.tags"> <!--remember how to deal with arrays in html-->
+      <div *ngFor="let tag of Project.tags"> <!--remember how to deal with arrays in html-->
         <div class="tag me-3 mb-1">{{ tag }}</div>
       </div>
     </div>
