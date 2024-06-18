@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Project } from '../models/project';
+import { Tag } from '../models/tag';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
@@ -16,7 +17,10 @@ export class PortfolioComponent {
       'Working through leetcode javascript practice problems can be difficult',
     projectLink: '',
     pictures: [],
-    tags: ["JavaScript", "Leetcode"],
+    tags: [
+      Tag.ANGULAR,
+      Tag.ASPNET,
+    ], //taken from the tag.ts file
   };
 
   constructor(private titleservice: Title) {
