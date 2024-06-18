@@ -16,7 +16,7 @@ export class PortfolioComponent {
       'Working through leetcode javascript practice problems can be difficult',
     projectLink: '',
     pictures: [],
-    tags: ['JavaScript, Leetcode'],
+    tags: ["JavaScript", "Leetcode"],
   };
 
   constructor(private titleservice: Title) {
