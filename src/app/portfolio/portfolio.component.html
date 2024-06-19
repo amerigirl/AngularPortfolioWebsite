@@ -1,18 +1,11 @@
 <div class="container">
-
   <div class="row">
-
-    <div class="col-lg-4 col-md-6 mb-4" style="max-width: 380px">
-      <project-card [Project]="project"></project-card> <!--why do you need both sets of quotes here?  Remember, it's important!'-->
-    </div>
-
-     <div class="col-lg-4 col-md-6 mb-4" style="max-width: 380px">
-      <project-card [Project]="project"></project-card>
-    </div>
-
-     <div class="col-lg-4 col-md-6 mb-4" style="max-width: 380px">
+    <div
+      *ngFor="let project of projects"
+      class="col-lg-4 col-md-6 mb-4"
+      style="max-width: 380px"
+    >
       <project-card [Project]="project"></project-card>
     </div>
   </div>
-
- </div>
+</div>

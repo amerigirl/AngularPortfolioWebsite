@@ -7,6 +7,6 @@ import { Project } from '../models/project';
   styleUrls: ['./project-card.component.css']
 })
 export class ProjectCardComponent {
-  @Input() Project = {} as Project; //this gives us our model information
+  @Input() Project = {} as Project; //lets you receive data from the parent
 
 }

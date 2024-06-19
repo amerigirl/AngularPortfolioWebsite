@@ -4,13 +4,18 @@
 >
   <div class="card-body">
     <h5 class="card-title">{{ Project.name }}</h5>
+    <img src="project.pictures[0]" class="card-img-top" alt="Project Image">
     <p class="card-text">{{ Project.summary }}</p>
     <button class="btn btn-primary">View More</button>
   </div>
   <div class="div card-footer">
     <div class="d-flex flex-wrap justify-content-center">
-      <div *ngFor="let tag of Project.tags"> <!--remember how to deal with arrays in html-->
-        <div class="tag me-3 mb-1"[style.background-color] = "tag.color">{{ tag }}</div> <!--how did you bind this here?  REMEMBER!-->
+      <div *ngFor="let tag of Project.tags">
+        <!--remember how to deal with arrays in html-->
+        <div class="tag me-3 mb-1" [style.background-color]="tag.color">
+          {{ tag }}
+        </div> <!--how did you bind this data here?  REMEMBER!-->
+
       </div>
     </div>
   </div>

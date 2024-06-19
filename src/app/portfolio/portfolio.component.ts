@@ -8,23 +8,23 @@ import { Tag } from '../models/tag';
   styleUrls: ['./portfolio.component.css'],
 })
 export class PortfolioComponent {
-  project: Project = {
-    id: 0,
-    name: 'JavaScript Practice',
+  projects: Project[] = [
+    //you have to add the  [].  Remember why? :)
 
-    summary: 'JavaScript Leetcode practice',
-    description:
-      'Working through leetcode javascript practice problems can be difficult',
-    projectLink: '',
-    pictures: [],
-    tags: [
-      Tag.ANGULAR,
-      Tag.ASPNET,
-    ], //taken from the tag.ts file
-  };
+    {
+      id: 0,
+      name: 'JavaScript Practice Exercises',
+      summary: 'A leetcode problem a day keeps the fear away!',
+      description:
+        'This is a compilation of easy and medium JavaScript practice exercises for coding interviews.  Data structures and algorithms are also great for building logic and reasoning skills.',
+      projectLink: 'https://github.com/amerigirl/JavaScript-Practice-Exercises',
+      pictures: ['src/assets/images/leetcode.png'],
+      tags: [Tag.JAVASCRIPT],
+    },
+  ];
 
   constructor(private titleservice: Title) {
-    //this will set the tab title
+    //this will set the tab title //built in Javascript service
     this.titleservice.setTitle('Be-Asia McKerracher - Portfolio');
   }
 }
