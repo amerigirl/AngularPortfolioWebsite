@@ -3,9 +3,9 @@
   style="max-width: 355px; min-width: 355px"
 >
   <div class="card-body">
-    <h5 class="card-title">{{ Project.name }}</h5>
-    <img src="project.pictures[0]" class="card-img-top" alt="Project Image">
-    <p class="card-text">{{ Project.summary }}</p>
+    <h5 class="card-title p-2">{{ Project.name }}</h5>
+    <img [src]="Project.pictures[0]" class="card-img-top p-1" alt="Project Image" style="height: 200px; width: 200px;">
+    <p class="card-text p-1">{{ Project.summary }}</p>
     <button class="btn btn-primary">View More</button>
   </div>
   <div class="div card-footer">
