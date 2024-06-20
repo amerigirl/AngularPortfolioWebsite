@@ -10,6 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { VideoClipsComponent } from './video-clips/video-clips.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     ResumeComponent,
     ContactComponent,
     ProjectCardComponent,
+    VideoClipsComponent,
   ],
   imports: [
     BrowserModule,
