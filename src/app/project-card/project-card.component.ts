@@ -10,16 +10,24 @@ import { ProjectModalComponent } from '../project-modal/project-modal.component'
 })
 export class ProjectCardComponent {
   @Input() Project = {} as Project; //lets you receive data from the parent
+
   bsModalRef?: BsModalRef; //this is for our modal. ? = optional
 
   constructor(private modalService: BsModalService) {}
 
+  //opens the popup when view more is clicked
   openProjectModal() {
     const modalOptions: ModalOptions = {
-      //this is a class that lets you define modal options--add to 
+      //this is a class that lets you define modal options--add to
       class: 'modal-lg',
+      initialState: {
+        project: this.Project,
+      },
     };
 
-    this.bsModalRef = this.modalService.show(ProjectModalComponent, modalOptions);
+    this.bsModalRef = this.modalService.show(
+      ProjectModalComponent,
+      modalOptions
+    );
   }
 }
