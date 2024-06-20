@@ -20,7 +20,7 @@ export class ProjectsService {
       tags: [Tag.JAVASCRIPT],
     },
     {
-      id: 0,
+      id: 1,
       name: 'Student Admin Portal (F.E.)',
       summary: 'Because students need things too!',
       description:
@@ -31,7 +31,7 @@ export class ProjectsService {
       tags: [Tag.TYPESCRIPT, Tag.ANGULAR, Tag.HTML],
     },
     {
-      id: 0,
+      id: 2,
       name: 'Student Admin Portal (B.E.)',
       summary: 'Creating persistent storage with ASP.NET!',
       description:
@@ -56,6 +56,6 @@ export class ProjectsService {
       throw new TypeError('There is no project that matches the id: ' + id); //just in case :)
     }
 
-    return project; 
+    return project;
   }
 }
