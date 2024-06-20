@@ -6,7 +6,7 @@
     <h5 class="card-title p-2">{{ Project.name }}</h5>
     <img [src]="Project.pictures[0]" class="card-img-top p-1" alt="Project Image" style="height: 200px; width: 200px;">
     <p class="card-text p-1">{{ Project.summary }}</p>
-    <button class="btn btn-primary">View More</button>
+    <button class="btn btn-primary" (click)="openProjectModal()">View More</button>
   </div>
   <div class="div card-footer">
     <div class="d-flex flex-wrap justify-content-center">
