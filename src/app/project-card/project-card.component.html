@@ -4,7 +4,7 @@
 >
   <div class="card-body">
     <h5 class="card-title p-2">{{ Project.name }}</h5>
-    <img [src]="Project.pictures[0]" class="card-img-top p-1" alt="Project Image" style="height: 200px; width: 200px;">
+    <img [src]="Project.pictures" class="card-img-top p-1" alt="Project Image" style="height: 200px; width: 200px;"> <!--why did the deletion of [0] in project.pictures[0] do nothing?-->
     <p class="card-text p-1">{{ Project.summary }}</p>
     <button class="btn btn-primary" (click)="openProjectModal()">View More</button>
   </div>
