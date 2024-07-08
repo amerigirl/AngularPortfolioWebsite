@@ -13,7 +13,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { VideoClipsComponent } from './video-clips/video-clips.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +32,8 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

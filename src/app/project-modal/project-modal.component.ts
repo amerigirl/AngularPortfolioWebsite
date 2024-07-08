@@ -9,8 +9,8 @@ import { Project } from '../models/project';
 })
 export class ProjectModalComponent {
   project = {} as Project;
-  
-  constructor(public BsModalRef: BsModalRef) {
+
+  constructor(public BsModalRef: BsModalRef) { //lets you use injection to use an angular component as a modal
 
   } //take some time getting to know this
 }
