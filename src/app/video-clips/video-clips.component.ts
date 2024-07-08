@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-video-clips',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class VideoClipsComponent {
 
+
+  constructor(private titleservice: Title) {
+    this.titleservice.setTitle('Be-Asia McKerracher - Videos');
+ }
 }
