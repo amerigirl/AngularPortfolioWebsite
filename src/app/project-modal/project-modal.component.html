@@ -5,9 +5,12 @@
 
 <div class="modal-body">
   <carousel>
-    <slide><img class="studying" src="/assets/images/studying!.jpg" alt="studying" style="display: block; width: 100%;"></slide>
-       <slide><img src="/assets/images/Karat_practice_list.png" alt="studying" style="display: block; width: 100%;"></slide>
-       <slide><img src="/assets/images/basic_practice.jpg" alt="studying" style="display: block; width: 100%;"></slide>
+
+<div *ngFor="for let picture of project.pictures">
+      <slide><img class="studying" src={{picture}} alt="studying" style="display: block; width: 100%;"></slide>
+
+</div>
+
 
   </carousel>
 </div>
