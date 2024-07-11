@@ -8,6 +8,7 @@
     <p class="card-text p-1">{{ Project.summary }}</p>
     <button class="btn btn-primary" (click)="openProjectModal()">View More</button>
   </div>
+  
   <div class="div card-footer">
     <div class="d-flex flex-wrap justify-content-center">
       <div *ngFor="let tag of Project.tags">
