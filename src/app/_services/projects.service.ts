@@ -7,7 +7,7 @@ import { Tag } from '../models/tag';
 })
 export class ProjectsService {
   projects: Project[] = [
-   //this service is fetching data from here.  Can we add a service where the data is stored in the future?
+    //this service is fetching data from here.  Can we add a service where the data is stored in the future?
 
     {
       id: 0,
@@ -16,7 +16,11 @@ export class ProjectsService {
       description:
         'This is a compilation of easy and medium JavaScript practice exercises for coding interviews.  Data structures and algorithms are also great for building logic and reasoning skills.',
       projectLink: 'https://github.com/amerigirl/JavaScript-Practice-Exercises',
-      pictures: ['/assets/images/studying!.jpg'],
+      pictures: [
+        '/assets/images/studying!.jpg',
+        '/assets/images/Karat_practice_list.png',
+        '/assets/images/basic_practice.jpg',
+      ],
       tags: [Tag.JAVASCRIPT],
     },
     {
@@ -43,14 +47,15 @@ export class ProjectsService {
     },
   ];
 
-  constructor() { }
+  constructor() {}
 
   getProjects() {
     return this.projects;
   }
 
-  getProjectById(id: number) : Project { //identifies the return type after :
-    let project = this.projects.find(project => project.id === id);
+  getProjectById(id: number): Project {
+    //identifies the return type after :
+    let project = this.projects.find((project) => project.id === id);
 
     if (project === undefined) {
       throw new TypeError('There is no project that matches the id: ' + id); //just in case :)
