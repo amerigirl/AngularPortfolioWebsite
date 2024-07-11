@@ -12,7 +12,7 @@ export class ProjectsService {
     {
       id: 0,
       name: 'JavaScript Practice Exercises',
-      summary: 'Leetcode practice problems :) ',
+      summary: 'Learning with Leetcode  :)',
       description:
         'This is a compilation of easy and medium JavaScript practice exercises for coding interviews.  Data structures and algorithms are also great for building logic and reasoning skills.',
       projectLink: 'https://github.com/amerigirl/JavaScript-Practice-Exercises',
