@@ -17,8 +17,15 @@
               <small><b>Languages:</b></small>
               <div class="form-group">
                 <div class="form-check">
-                  <input type="checkbox" class="form-check-input position-static me-2" >
-                <label class="form-check-label small">TypeScript</label>
+                  <!--review two-way binding using ngModel-->
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="typeScript"
+                    (change)="filter()"
+                    name="typeScript"
+                  />
+                  <label class="form-check-label small">TypeScript</label>
                 </div>
               </div>
             </div>
