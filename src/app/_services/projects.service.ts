@@ -6,9 +6,8 @@ import { Tag } from '../models/tag';
   providedIn: 'root',
 })
 export class ProjectsService {
+  //this service is fetching data from here.  Can we add a service where the data is stored in the future?
   projects: Project[] = [
-    //this service is fetching data from here.  Can we add a service where the data is stored in the future?
-
     {
       id: 0,
       name: 'JavaScript Practice Exercises',
@@ -55,10 +54,12 @@ export class ProjectsService {
 
   getProjectById(id: number): Project {
     //identifies the return type after :
+
     let project = this.projects.find((project) => project.id === id);
 
+    //just in case :)
     if (project === undefined) {
-      throw new TypeError('There is no project that matches the id: ' + id); //just in case :)
+      throw new TypeError('There is no project that matches the id: ' + id);
     }
 
     return project;

@@ -10,11 +10,14 @@ import { ProjectsService } from '../_services/projects.service';
 })
 export class PortfolioComponent implements OnInit {
   projects = {} as Project[]; //let's chat about this!
+  isCollapsed: boolean = true;
 
   constructor(private titleservice: Title, private projectService: ProjectsService) {
     //this will set the tab title //built in Javascript service
     this.titleservice.setTitle('Be-Asia McKerracher - Portfolio');
   }
+
+
   ngOnInit(): void {
     this.projects = this.projectService.getProjects();
   }

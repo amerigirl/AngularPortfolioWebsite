@@ -21,7 +21,7 @@ export class ProjectCardComponent {
       //this is a class that lets you define modal options--add to
       class: 'modal-lg',
       initialState: {
-        project: this.Project, 
+        project: this.Project,
       },
     };
 
