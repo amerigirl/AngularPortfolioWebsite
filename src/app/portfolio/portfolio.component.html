@@ -17,7 +17,7 @@
               <small><b>Languages:</b></small>
               <div class="form-group">
                 <div class="form-check">   <!--builds your checkbox-->
-                  
+
                   <!--review two-way binding using ngModel-->
                   <input
                     type="checkbox"
@@ -27,6 +27,18 @@
                     name="typeScript"
                   />
                   <label class="form-check-label small">TypeScript</label>
+                </div>
+                <div class="form-check">   <!--builds your checkbox-->
+
+                  <!--review two-way binding using ngModel-->
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="angular"
+                    (change)="filter()"
+                    name="angular"
+                  />
+                  <label class="form-check-label small">Angular</label>
                 </div>
               </div>
             </div>
