@@ -13,6 +13,14 @@ export class PortfolioComponent implements OnInit {
   isCollapsed: boolean = true;
   typeScript: boolean = false;
   html: boolean = false;
+  angular: boolean = false;
+  javaScript: boolean = false;
+  cSharp: boolean = false;
+  java: boolean = false;
+  aspNet: boolean = false;
+  python: boolean = false;
+  nodeJS: boolean = false;
+  sql: boolean = false;
 
   constructor(
     private titleservice: Title,
@@ -36,6 +44,38 @@ export class PortfolioComponent implements OnInit {
     if (this.html) {
       filterTags.push(Tag.HTML);
     }
+
+    if (this.angular) {
+      filterTags.push(Tag.ANGULAR);
+    }
+
+    if (this.javaScript) {
+      filterTags.push(Tag.JAVASCRIPT);
+    }
+
+    if (this.cSharp) {
+      filterTags.push(Tag.CSHARP);
+    }
+
+    if (this.java) {
+      filterTags.push(Tag.JAVA);
+    }
+
+    if (this.aspNet) {
+      filterTags.push(Tag.ASPNET);
+    }
+
+    if (this.python) {
+      filterTags.push(Tag.PYTHON);
+    }
+
+    if (this.nodeJS) {
+      filterTags.push(Tag.NODEJS);
+    }
+    if (this.sql) {
+      filterTags.push(Tag.SQL);
+    }
+
     this.projects = this.projectService.getProjectsByFilter(filterTags);
   }
 }
