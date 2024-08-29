@@ -12,7 +12,7 @@ export class PortfolioComponent implements OnInit {
   projects = {} as Project[]; //let's chat about this!
   isCollapsed: boolean = true;
   typeScript: boolean = false;
-  angular: boolean = false;
+  html: boolean = false;
 
   constructor(
     private titleservice: Title,
@@ -33,8 +33,8 @@ export class PortfolioComponent implements OnInit {
       filterTags.push(Tag.TYPESCRIPT);
     }
 
-    if (this.angular) {
-      filterTags.push(Tag.ANGULAR);
+    if (this.html) {
+      filterTags.push(Tag.HTML);
     }
     this.projects = this.projectService.getProjectsByFilter(filterTags);
   }
