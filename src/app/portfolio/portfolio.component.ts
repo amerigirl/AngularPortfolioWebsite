@@ -72,7 +72,13 @@ export class PortfolioComponent implements OnInit {
     if (this.sql) {
       filterTags.push(Tag.SQL);
     }
-    
+
+    //just making sure the button is active
+    if (this.html || this.angular || this.javaScript || this.cSharp || this.java || this.aspNet || this.python || this.nodeJS || this.sql) {
+      this.filtering = true;
+    } else {
+      this.filtering = false;
+    }
 
     this.projects = this.projectService.getProjectsByFilter(filterTags);
   }
@@ -87,7 +93,7 @@ export class PortfolioComponent implements OnInit {
     this.python = false;
     this.nodeJS = false;
     this.sql = false;
-
+    this.filtering = false; //is this redundant??
     this.projects = this.projectService.getProjects();
   }
 

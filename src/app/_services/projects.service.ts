@@ -31,7 +31,7 @@ export class ProjectsService {
       projectLink:
         'https://github.com/amerigirl/Student-Admin-Portal-with-Persistent-Storage',
       pictures: ['/assets/images/SAportal.png'],
-      tags: [Tag.TYPESCRIPT, Tag.ANGULAR, Tag.HTML],
+      tags: [ Tag.ANGULAR, Tag.HTML],
     },
     {
       id: 2,

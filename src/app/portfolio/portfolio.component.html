@@ -11,6 +11,7 @@
       <button
         class="btn btn-outline-secondary mb-2"
         (click)="resetFilters()"
+        [hidden]="!filtering"
       >
         Reset
       </button>
