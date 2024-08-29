@@ -11,7 +11,7 @@
 
   <div class="div card-footer">
     <div class="d-flex flex-wrap justify-content-center">
-      <div *ngFor="let tag of Project.tags">
+      <div *ngFor="let tag of Project.tags" class="class-container">
         <!--remember how to deal with arrays in html-->
         <div class="tag me-3 mb-1" [style.background-color]="tag.color">
           {{ tag }}
