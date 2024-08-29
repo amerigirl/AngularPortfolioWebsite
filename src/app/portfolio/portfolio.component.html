@@ -7,28 +7,24 @@
       >
         Filter
       </button>
+
+      <button
+        class="btn btn-outline-secondary mb-2"
+        (click)="resetFilters()"
+      >
+        Reset
+      </button>
     </div>
 
     <div [collapse]="isCollapsed" [isAnimated]="true">
-      <div class="border mb-2 shadow-sm" style="width: 250px">
+      <div class="border mb-2 shadow-sm" style="width: 380px">
         <form>
           <div class="row mx-0">
             <div class="col">
               <small><b>Languages:</b></small>
               <div class="form-group">
-                <div class="form-check">   <!--builds your checkbox-->
-
-                  <!--review two-way binding using ngModel-->
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="typeScript"
-                    (change)="filter()"
-                    name="typeScript"
-                  />
-                  <label class="form-check-label small">TypeScript</label>
-                </div>
-                <div class="form-check">   <!--builds your checkbox-->
+                <div class="form-check">
+                  <!--builds your checkbox-->
 
                   <!--review two-way binding using ngModel-->
                   <input
@@ -40,23 +36,122 @@
                   />
                   <label class="form-check-label small">HTML</label>
                 </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <small><b>Frameworks:</b></small>
-                <div class="form-check">   <!--builds your checkbox-->
+                <div class="form-check">
+                  <!--builds your checkbox-->
 
                   <!--review two-way binding using ngModel-->
                   <input
                     type="checkbox"
                     class="form-check-input position-static me-2"
-                    [(ngModel)]="angular"
+                    [(ngModel)]="javaScript"
                     (change)="filter()"
-                    name="angular"
+                    name="javaScript"
                   />
-                  <label class="form-check-label small">Angular</label>
+                  <label class="form-check-label small">JavaScript</label>
                 </div>
+
+                <div class="form-check">
+                  <!--builds your checkbox-->
+
+                  <!--review two-way binding using ngModel-->
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="cSharp"
+                    (change)="filter()"
+                    name="cSharp"
+                  />
+                  <label class="form-check-label small">CSharp</label>
+                </div>
+
+                <div class="form-check">
+                  <!--builds your checkbox-->
+
+                  <!--review two-way binding using ngModel-->
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="java"
+                    (change)="filter()"
+                    name="java"
+                  />
+                  <label class="form-check-label small">Java</label>
+                </div>
+                <div class="form-check">
+                  <!--builds your checkbox-->
+
+                  <!--review two-way binding using ngModel-->
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="python"
+                    (change)="filter()"
+                    name="python"
+                  />
+                  <label class="form-check-label small">Python</label>
+                </div>
+
+                <div class="form-check">
+                  <!--builds your checkbox-->
+
+                  <!--review two-way binding using ngModel-->
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="sql"
+                    (change)="filter()"
+                    name="sql"
+                  />
+                  <label class="form-check-label small">SQL</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <small><b>Frameworks:</b></small>
+              <div class="form-check">
+                <!--builds your checkbox-->
+
+                <!--review two-way binding using ngModel-->
+                <input
+                  type="checkbox"
+                  class="form-check-input position-static me-2"
+                  [(ngModel)]="angular"
+                  (change)="filter()"
+                  name="angular"
+                />
+                <label class="form-check-label small">Angular</label>
+              </div>
+
+              <div class="form-check">
+                <!--builds your checkbox-->
+
+                <!--review two-way binding using ngModel-->
+                <input
+                  type="checkbox"
+                  class="form-check-input position-static me-2"
+                  [(ngModel)]="aspNet"
+                  (change)="filter()"
+                  name="aspNet"
+                />
+                <label class="form-check-label small">Asp.Net</label>
+              </div>
+            </div>
+            <div class="col">
+              <small><b>Environments:</b></small>
+              <div class="form-check">
+                <!--builds your checkbox-->
+
+                <!--review two-way binding using ngModel-->
+                <input
+                  type="checkbox"
+                  class="form-check-input position-static me-2"
+                  [(ngModel)]="nodeJS"
+                  (change)="filter()"
+                  name="nodeJS"
+                />
+                <label class="form-check-label small">NodeJs</label>
+              </div>
             </div>
           </div>
         </form>

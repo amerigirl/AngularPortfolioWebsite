@@ -11,7 +11,7 @@ import { ProjectsService } from '../_services/projects.service';
 export class PortfolioComponent implements OnInit {
   projects = {} as Project[]; //let's chat about this!
   isCollapsed: boolean = true;
-  typeScript: boolean = false;
+
   html: boolean = false;
   angular: boolean = false;
   javaScript: boolean = false;
@@ -22,6 +22,7 @@ export class PortfolioComponent implements OnInit {
   nodeJS: boolean = false;
   sql: boolean = false;
 
+  filtering: boolean = false;
   constructor(
     private titleservice: Title,
     private projectService: ProjectsService
@@ -36,10 +37,6 @@ export class PortfolioComponent implements OnInit {
 
   filter() {
     let filterTags: Tag[] = [];
-
-    if (this.typeScript) {
-      filterTags.push(Tag.TYPESCRIPT);
-    }
 
     if (this.html) {
       filterTags.push(Tag.HTML);
@@ -75,7 +72,23 @@ export class PortfolioComponent implements OnInit {
     if (this.sql) {
       filterTags.push(Tag.SQL);
     }
+    
 
     this.projects = this.projectService.getProjectsByFilter(filterTags);
   }
+
+  resetFilters() {
+    this.html = false;
+    this.angular = false;
+    this.javaScript = false;
+    this.cSharp = false;
+    this.java = false;
+    this.aspNet = false;
+    this.python = false;
+    this.nodeJS = false;
+    this.sql = false;
+
+    this.projects = this.projectService.getProjects();
+  }
+
 }
