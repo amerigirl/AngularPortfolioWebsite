@@ -1,15 +1,17 @@
-
-
-.languages{
+.languages {
   text-align: left;
   margin-left: 5rem;
   text-decoration: underline;
 }
 
-.dataEnviro{
-text-decoration: underline;
- text-align: left;
-margin-left: 5rem;
+.dataEnviro {
+  text-decoration: underline;
+  text-align: left;
+  margin-left: 5rem;
 }
 
-
+.collab {
+  text-decoration: underline;
+  text-align: left;
+  margin-left: 5rem;
+}
