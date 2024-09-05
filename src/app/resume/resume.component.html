@@ -3,200 +3,202 @@
     Download PDF Resume
   </button>
 
-  <accordion>
-    <accordion-group heading="Summary">
-      <p>
-        Hello! A quick blurg about me: I'm a Software Engineer with a pension
-        for problem solving, technical accuracy, and a love of agile
-        development! I'm currently focused on the Angular framework and
-        front-end development while also gowing my skills in backend
-        architecture through SQL and the .Net framework. I'm also a former
-        educator for UMKC and tutor for Women’s+ Web Development bootcamp
-        through LaunchCode. The tech field is such a dynamic space, I can't wait
-        to see where it takes me :)
-      </p>
-    </accordion-group>
+  <div class="bg-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group heading="Summary">
+        <p>
+          Hello! A quick blurg about me: I'm a Software Engineer with a pension
+          for problem solving, technical accuracy, and a love of agile
+          development! I'm currently focused on the Angular framework and
+          front-end development while also gowing my skills in backend
+          architecture through SQL and the .Net framework. I'm also a former
+          educator for UMKC and tutor for Women’s+ Web Development bootcamp
+          through LaunchCode. The tech field is such a dynamic space, I can't
+          wait to see where it takes me :)
+        </p>
+      </accordion-group>
 
-    <accordion-group heading="Languages/Skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 languages">
-            <div class="mt-4 mb-3">
-              <h6>Languages/Frameworks</h6>
+      <accordion-group heading="Languages/Skills">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 languages">
+              <div class="mt-4 mb-3">
+                <h6>Languages/Frameworks</h6>
 
+                <ul>
+                  <li>JavaScript</li>
+                  <li>HTML/CSS</li>
+                  <li>Angular</li>
+                  <li>C-Sharp</li>
+                  <li>Asp.Net</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="dataEnviro col-md-3 mt-4">
+              <h6 class="">Databases/Environments</h6>
               <ul>
-                <li>JavaScript</li>
-                <li>HTML/CSS</li>
-                <li>Angular</li>
-                <li>C-Sharp</li>
-                <li>Asp.Net</li>
+                <li>SQL</li>
+                <li>NodeJs</li>
+                <li>VS Code</li>
+                <li>Visual Studio</li>
+              </ul>
+            </div>
+
+            <div class="collab col-md-3 mt-4">
+              <h6>Skills</h6>
+              <ul>
+                <li>Peer Mentoring</li>
+                <li>Cross-team Collaboration</li>
+                <li>Team Building</li>
+                <li>Documentation Writing</li>
               </ul>
             </div>
           </div>
-
-          <div class="dataEnviro col-md-3 mt-4">
-            <h6 class="">Databases/Environments</h6>
-            <ul>
-              <li>SQL</li>
-              <li>NodeJs</li>
-              <li>VS Code</li>
-              <li>Visual Studio</li>
-            </ul>
-          </div>
-
-          <div class="collab col-md-3 mt-4">
-            <h6>Skills</h6>
-            <ul>
-              <li>Peer Mentoring</li>
-              <li>Cross-team Collaboration</li>
-              <li>Team Building</li>
-              <li>Documentation Writing</li>
-            </ul>
-          </div>
         </div>
-      </div>
-    </accordion-group>
+      </accordion-group>
 
-    <accordion-group heading="Work Experience">
-      <div style="text-align: left">
-        <h5>Associate Software Engineer</h5>
-        <div class="sTitle">
-          <h6>H&R Block</h6>
-          <h6>Nov 2022 - May 2024</h6>
-          <h6>Kansas City, Missouri, United States · Hybrid</h6>
-        </div>
-
-        <br />
-        <ul>
-          <li>
-            Implemented manual testing on 3 pages, focusing on both user
-            experience and functionality.
-          </li>
-          <li>
-            Created an internally facing, full-stack micro-app to log client
-            data for use in production troubleshooting.
-          </li>
-
-          <li>
-            Upgraded SDK packages in production on .Net APIs to bring microapp
-            usage to 100%.
-          </li>
-          <li>
-            Analyzed logging metrics in REST APIs (.NET) and raised metrics by
-            implementing Azure Health Checks across 3 microapps.
-          </li>
-          <li>
-            Updated unit tests for 3 on-prod micro-apps using Karma testing
-            tools and dependencies.
-          </li>
-          <li>
-            Facilitated 4 agile-based, sprint retrospectives for the team to
-            reflect on team goals and milestones.
-          </li>
-        </ul>
-      </div>
-      <br />
-
-      <div style="text-align: left">
-        <h5>Web Dev Tutor</h5>
-        <div class="sTitle">
-          <h6>LaunchCode</h6>
-          <h6>Jan 2023 - July 2023</h6>
-          <h6>Kansas City, Missouri, United States · On-Site</h6>
-        </div>
-
-        <br />
-        <ul>
-          <li>
-            Facilitated group learning by mentoring 20+ students in JavaScript,
-            HTML/CSS, and the Angular Framework.
-          </li>
-          <li>
-            Documented technical specifications and project details to help
-            students understand current objectives.
-          </li>
-
-          <li>
-            Evaluated 20 students’ work based on technical accuracy and
-            adherence to the given parameters.
-          </li>
-          <li>
-            Helped students learn the basics of version control on GitHub and
-            Replit.
-          </li>
-        </ul>
-        <br />
-      </div>
-      <div style="text-align: left">
-        <h5>Adjunct Professor/Dual Credit English Teacher</h5>
-        <div class="sTitle">
-          <h6>North Kansas City Schools</h6>
-          <h6>Mar 2015 - May 2024</h6>
-          <h6>Kansas City, Missouri, United States · On-site, Hybrid</h6>
-        </div>
-
-        <br />
-        <ul>
-          <li>
-            Designed and implemented individual client-instruction models to
-            eliminate learning and skill deficits while facilitating college
-            readiness.
-          </li>
-          <li>
-            Coordinated with on-campus professors to deliver college-level
-            analysis and instruction pre-college students.
-          </li>
-
-          <li>
-            Worked with students and counselors to complete critical paperwork,
-            meet deadlines, and attain college course credits while still in
-            high school.
-          </li>
-          <li>
-            Analyzed student assignments as compared to college requirements and
-            adjusted teaching strategies to meet college level expectations in
-            rhetorical and literary analysis.
-          </li>
-        </ul>
-      </div>
-    </accordion-group>
-
-    <accordion-group heading="Education/Certs">
-      <div class="row" style="text-align: left">
-        <div class="col">
-          <h5 class="edu mb-4">Education</h5>
-
-          <h6>LaunchCode</h6>
+      <accordion-group heading="Work Experience">
+        <div style="text-align: left">
+          <h5>Associate Software Engineer</h5>
           <div class="sTitle">
-            <h6>LC101 Full-Stack Web Development Program</h6>
-            <div>2022</div>
+            <h6>H&R Block</h6>
+            <h6>Nov 2022 - May 2024</h6>
+            <h6>Kansas City, Missouri, United States · Hybrid</h6>
+          </div>
+
+          <br />
+          <ul>
+            <li>
+              Implemented manual testing on 3 pages, focusing on both user
+              experience and functionality.
+            </li>
+            <li>
+              Created an internally facing, full-stack micro-app to log client
+              data for use in production troubleshooting.
+            </li>
+
+            <li>
+              Upgraded SDK packages in production on .Net APIs to bring microapp
+              usage to 100%.
+            </li>
+            <li>
+              Analyzed logging metrics in REST APIs (.NET) and raised metrics by
+              implementing Azure Health Checks across 3 microapps.
+            </li>
+            <li>
+              Updated unit tests for 3 on-prod micro-apps using Karma testing
+              tools and dependencies.
+            </li>
+            <li>
+              Facilitated 4 agile-based, sprint retrospectives for the team to
+              reflect on team goals and milestones.
+            </li>
+          </ul>
+        </div>
+        <br />
+
+        <div style="text-align: left">
+          <h5>Web Dev Tutor</h5>
+          <div class="sTitle">
+            <h6>LaunchCode</h6>
+            <h6>Jan 2023 - July 2023</h6>
+            <h6>Kansas City, Missouri, United States · On-Site</h6>
+          </div>
+
+          <br />
+          <ul>
+            <li>
+              Facilitated group learning by mentoring 20+ students in
+              JavaScript, HTML/CSS, and the Angular Framework.
+            </li>
+            <li>
+              Documented technical specifications and project details to help
+              students understand current objectives.
+            </li>
+
+            <li>
+              Evaluated 20 students’ work based on technical accuracy and
+              adherence to the given parameters.
+            </li>
+            <li>
+              Helped students learn the basics of version control on GitHub and
+              Replit.
+            </li>
+          </ul>
+          <br />
+        </div>
+        <div style="text-align: left">
+          <h5>Adjunct Professor/Dual Credit English Teacher</h5>
+          <div class="sTitle">
+            <h6>North Kansas City Schools</h6>
+            <h6>Mar 2015 - May 2024</h6>
+            <h6>Kansas City, Missouri, United States · On-site, Hybrid</h6>
+          </div>
+
+          <br />
+          <ul>
+            <li>
+              Designed and implemented individual client-instruction models to
+              eliminate learning and skill deficits while facilitating college
+              readiness.
+            </li>
+            <li>
+              Coordinated with on-campus professors to deliver college-level
+              analysis and instruction pre-college students.
+            </li>
+
+            <li>
+              Worked with students and counselors to complete critical
+              paperwork, meet deadlines, and attain college course credits while
+              still in high school.
+            </li>
+            <li>
+              Analyzed student assignments as compared to college requirements
+              and adjusted teaching strategies to meet college level
+              expectations in rhetorical and literary analysis.
+            </li>
+          </ul>
+        </div>
+      </accordion-group>
+
+      <accordion-group heading="Education/Certs">
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h5 class="edu mb-4">Education</h5>
+
+            <h6>LaunchCode</h6>
+            <div class="sTitle">
+              <h6>LC101 Full-Stack Web Development Program</h6>
+              <div>2022</div>
+            </div>
+            <br />
+            <h6>Truman State University</h6>
+            <div class="sTitle">
+              <h6>Masters of Arts in English</h6>
+              <div>2009</div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h5 class="edu mb-4">Certifications</h5>
+
+            <h6>Programming Foundations: Software Testing/QA</h6>
+            <div class="sTitle">
+              <h6>LinkedIn</h6>
+              <h6>Issued May 2024</h6>
+            </div>
+            <br />
+            <h6>Microsoft AZ-900 Cloud Computing Fundamentals</h6>
+            <div class="sTitle">
+              <h6>Microsoft</h6>
+              <h6>Issued Feb 2023</h6>
+              <h6>Credential ID Certification Number: 1593-2761</h6>
+            </div>
           </div>
           <br />
-          <h6>Truman State University</h6>
-          <div class="sTitle">
-            <h6>Masters of Arts in English</h6>
-            <div>2009</div>
-          </div>
         </div>
-
-        <div class="col">
-          <h5 class="edu mb-4">Certifications</h5>
-
-          <h6>Programming Foundations: Software Testing/QA</h6>
-          <div class="sTitle">
-            <h6>LinkedIn</h6>
-            <h6>Issued May 2024</h6>
-          </div>
-<br>
-          <h6>Microsoft AZ-900 Cloud Computing Fundamentals</h6>
-          <div class="sTitle">
-            <h6>Microsoft</h6>
-            <h6>Issued Feb 2023</h6>
-            <h6>Credential ID Certification Number: 1593-2761</h6>
-          </div>
-        </div>
-        <br />
-      </div>
-    </accordion-group>
-  </accordion>
+      </accordion-group>
+    </accordion>
+  </div>
 </div>
