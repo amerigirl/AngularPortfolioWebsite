@@ -30,7 +30,19 @@
         </p>
       </accordion-group>
 
-      <accordion-group heading="Languages/Skills">
+      <accordion-group [(isOpen)]="isLanguageSkillsOpen">
+        <button
+          accordion-heading
+          class="btn btn-block justify-content-between d-flex w-100"
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Language and Skills</div>
+
+          <div style="width: 10.95px">
+            <div *ngIf="!isLanguageSkillsOpen" style="color: white">></div>
+            <div *ngIf="isLanguageSkillsOpen" style="color: white">v</div>
+          </div>
+        </button>
         <div class="container">
           <div class="row">
             <div class="col-md-3 languages">
@@ -72,11 +84,9 @@
 
       <accordion-group [(isOpen)]="isWorkExperienceOpen">
         <button
-         accordion-heading
+          accordion-heading
           class="btn btn-block justify-content-between d-flex w-100"
         >
-
-
           <div style="visibility: hidden">></div>
           <div class="btn-link">Work Experience</div>
 
@@ -190,7 +200,19 @@
       </accordion-group>
 
       <accordion-group [(isOpen)]="isEducationOpen">
-        
+        <button
+          accordion-heading
+          class="btn btn-block justify-content-between d-flex w-100"
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Education</div>
+
+          <div style="width: 10.95px">
+            <div *ngIf="!isEducationOpen" style="color: white">></div>
+            <div *ngIf="isEducationOpen" style="color: white">v</div>
+          </div>
+        </button>
+
         <div class="row" style="text-align: left">
           <div class="col">
             <h5 class="edu mb-4">Education</h5>
