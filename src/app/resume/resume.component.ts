@@ -8,6 +8,8 @@ import { Title } from '@angular/platform-browser';
 })
 export class ResumeComponent {
   //you need to add a renderer to deal with viewing files or downloading them??
+
+  isWorkExperienceOpen: boolean = false;
   constructor(private renderer: Renderer2,private titleservice: Title) {
     //this will set the tab title
     this.titleservice.setTitle('Be-Asia McKerracher - Resume');

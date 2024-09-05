@@ -5,7 +5,13 @@
 
   <div class="bg-2">
     <accordion [isAnimated]="true" class="shadow">
-      <accordion-group heading="Summary">
+      <accordion-group [(isOpen)]="isWorkExperienceOpen">
+        <button accordion-heading class="btn btn-block justify-content-between d-flex w-100">
+          <div class="btn-link">Summary</div>
+
+          <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+          <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+        </button>
         <p>
           Hello! A quick blurg about me: I'm a Software Engineer with a pension
           for problem solving, technical accuracy, and a love of agile
